@@ -1,9 +1,10 @@
 import Form from "./Form";
 import Tasks from "./Tasks";
+import Buttons from "./Buttons";
 
 const tasks = [
-  {id:1, content: "kup mleko", done: true},
-  {id:2, content: "kup bułki", done: false},
+  { id: 1, content: "kup mleko", done: false },
+  { id: 2, content: "kup bułki", done: true },
 ];
 
 const hideDoneTasks = false;
@@ -21,7 +22,7 @@ function App() {
       <section className="container">
         <header className="container__header">
           <h2 className="container__header--removeMargin">Lista zadań</h2>
-          <div className="container__buttons"></div>
+          <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
         </header>
         <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
       </section>
