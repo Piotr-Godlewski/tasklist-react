@@ -1,0 +1,23 @@
+.container {
+    background-color: #fff;
+    margin: 5px 15px;
+    padding: 10px;
+}
+
+.container__header {
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.container__header--removeMargin {
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .container__header {
+        grid-template-columns: 1fr;
+    }
+}
