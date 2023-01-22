@@ -6,9 +6,9 @@ This is my first aplication in React.js (homework youcode modul 8).
 Now aplication is without interaction, only the appearance of  this aplication has been rendered using react.js
 
 ## Demo
-
+https://piotr-godlewski.github.io/tasklist-react/
 ## Screenshot
-
+![screenshot](public/screen.png)
 
 ## About Create React App
 
