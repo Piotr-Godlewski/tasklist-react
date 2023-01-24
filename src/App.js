@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -10,9 +11,13 @@ const tasks = [
   { id: 2, content: "kup bułki", done: true },
 ];
 
-const hideDoneTasks = false;
-
 function App() {
+  const [hideDoneTasks, setHideDoneTasks] = useState(false);
+
+  const toggleHideDoneTasks = () => {
+    setHideDoneTasks(hideDoneTasks => !hideDoneTasks);
+  };
+
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -34,6 +39,7 @@ function App() {
           <Buttons
             tasks={tasks}
             hideDoneTasks={hideDoneTasks}
+            toggleHideDoneTasks={toggleHideDoneTasks}
           />}
       />
     </Container>
