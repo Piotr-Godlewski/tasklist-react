@@ -8,7 +8,7 @@ import Container from "./Container";
 
 function App() {
 
-  const tasksFromLocalStorage = localStorage.getItem("tasks");
+  const tasksFromLocalStorage = JSON.parse(localStorage.getItem("tasks"));
 
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
   const [tasks, setTasks] = useState(tasksFromLocalStorage);
