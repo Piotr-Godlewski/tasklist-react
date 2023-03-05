@@ -10,7 +10,6 @@ function App() {
 
   const tasksFromLocalStorage = JSON.parse(localStorage.getItem("tasks"));
 
-  
   const [hideDoneTasks, setHideDoneTasks] = useState(false);
   const [tasks, setTasks] = useState(tasksFromLocalStorage);
 
