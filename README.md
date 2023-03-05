@@ -4,6 +4,7 @@
 
 This is my first aplication in React.js (homework youcode modul 8).
 Now aplication is without interaction, only the appearance of  this aplication has been rendered using react.js
+Update (05.03.2023)
 
 ## Demo
 https://piotr-godlewski.github.io/tasklist-react/
