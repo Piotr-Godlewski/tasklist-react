@@ -20,6 +20,10 @@ Buttons style changing: added transition and transform.
 
 Update (05.03.2023):
 - added localStorage (remembers tasks)
+
+Update (11.03.2023):
+- added focus on input after click button
+- changed style.css to style-components
 ## Demo
 https://piotr-godlewski.github.io/tasklist-react/
 ## Screenshot
