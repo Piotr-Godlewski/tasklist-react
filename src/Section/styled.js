@@ -1,23 +1,23 @@
-.container {
+import styled from "styled-components";
+
+export const Container = styled.section`
     background-color: #fff;
     margin: 5px 15px;
     padding: 10px;
-}
+`;
 
-.container__header {
+export const Header = styled.header`
     border-bottom: 1px solid #ddd;
     padding: 15px;
     margin: 5px;
     display: grid;
     grid-template-columns: 1fr auto;
-}
 
-.container__title {
-    margin: 0;
-}
-
-@media (max-width: 767px) {
-    .container__header {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
     }
-}
+`;
+
+export const Title = styled.h2`
+    margin: 0;
+`;
