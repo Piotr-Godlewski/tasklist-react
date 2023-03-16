@@ -24,6 +24,9 @@ Update (05.03.2023):
 Update (11.03.2023):
 - added focus on input after click button
 - changed style.css to style-components
+
+Update (16.03.2023):
+- added custom Hook useTasks
 ## Demo
 https://piotr-godlewski.github.io/tasklist-react/
 ## Screenshot
