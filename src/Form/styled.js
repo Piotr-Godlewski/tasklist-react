@@ -8,31 +8,31 @@ export const StyledForm = styled.form`
 `;
 
 export const Input = styled.input`
-    border: 1px solid #ddd;
+    border: 1px solid ${({theme}) => theme.color.alto};
     padding: 10px;
     flex-grow: 1;
     margin: 5px;
 `;
 
 export const Button = styled.button`
-    background-color: teal;
+    background-color: ${({theme}) => theme.color.teal};
     transition: 0.5s;
-    color: white;
+    color: ${({theme}) => theme.color.white};
     border: none;
     padding: 10px;
     margin: 5px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         width: 100%;
     }
 
     &:hover {
-        background-color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
         transform: scale(1.10);
         transition: 0.5s;
     }
 
     &:active {
-        border: 1px solid #000;
+        border: 1px solid ${({theme}) => theme.color.black};
     }
 `

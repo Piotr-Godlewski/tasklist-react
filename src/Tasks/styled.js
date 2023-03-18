@@ -7,7 +7,7 @@ export const TaskList = styled.ul`
 `;
 
 export const Item = styled.li`
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid ${({theme}) => theme.color.alto};
     margin: 15px;
     padding: 10px;
     display: grid;
@@ -30,26 +30,26 @@ export const Button = styled.button`
     width: 30px;
     height: 30px;
     border: none;
-    transition: background 0.5s;
-    color: white;
+    transition: filter 0.5s;
+    color: ${({theme}) => theme.color.white};
 
     &:active{
-        border: 1px solid #000;
+        border: 1px solid ${({theme}) => theme.color.black};
     }
 
     ${({ toggleDone }) => toggleDone && css`
-        background-color: green;
+        background-color: ${({theme}) => theme.color.forestGreen};
 
         &:hover {
-            background-color: hsl(120, 100%, 35%);
+            filter: brightness(115%);
         }
     `}
 
     ${({ removeTask }) => removeTask && css`
-        background-color: hsl(348, 83%, 40%);
+        background-color: ${({theme}) => theme.color.crimson};
 
         &:hover {
-            background-color: hsl(348, 83%, 55%);
+            filter: brightness(125%);
         }
     `}
 `;

@@ -4,23 +4,23 @@ export const ContainerButtons = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;
 
 export const Button = styled.button`
     border: none;
-    color: teal;
+    color: ${({theme}) => theme.color.teal};
     transition: 0.5s;
     background-color: transparent;
     padding: 10px;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(110%);
     }
 
     &:disabled {
-        color: #ccc;
+        color: ${({theme}) => theme.color.silver};
     }
 `;
