@@ -10,9 +10,7 @@ function Tasks() {
 
   const {
     removeTask,
-    toggleTaskDone,
     setAllDone,
-    addNewTask,
   } = useTasks();
 
   return (
@@ -21,9 +19,7 @@ function Tasks() {
 
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form
-          addNewTask={addNewTask}
-        />}
+        body={<Form/>}
       />
 
       <Section
@@ -31,7 +27,6 @@ function Tasks() {
         body={
           <TasksList
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />}
 
         extraHeaderContent={
