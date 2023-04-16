@@ -22,7 +22,7 @@ const tasksSlice = createSlice({
             state.tasks.splice(index, 1);
         },
         setAllDone: (state) => {
-           state.tasks.map(task => task.done = true);
+            state.tasks.map(task => task.done = true);
         },
     },
 });
