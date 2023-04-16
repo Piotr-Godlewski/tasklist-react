@@ -27,6 +27,10 @@ Update (11.03.2023):
 
 Update (16.03.2023):
 - added custom Hook useTasks
+
+Update (16.04.2023):
+- changed application from React to React-redux (added store and createSlice with reducers: addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone)
+
 ## Demo
 https://piotr-godlewski.github.io/tasklist-react/
 ## Screenshot
