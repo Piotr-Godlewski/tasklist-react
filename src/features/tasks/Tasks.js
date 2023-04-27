@@ -5,7 +5,7 @@ import Section from "../../common/Section";
 import Header from "../../common/Header/styled";
 import Container from "../../common/Container/styled";
 
-function Tasks() {
+const Tasks = () => {
   return (
     <Container>
       <Header>Lista zadań</Header>
