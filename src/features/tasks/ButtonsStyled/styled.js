@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerButtons = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    
 
     @media (max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 `;
 
