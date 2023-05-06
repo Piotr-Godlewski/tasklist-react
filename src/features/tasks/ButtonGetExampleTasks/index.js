@@ -10,8 +10,11 @@ const ButtonGetExampleTasks = () => {
 
     return (
         <ContainerButtons>
-            <Button disabled={loading} onClick={() => dispatch(fetchExampleTasks())}>
-             {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
+            <Button
+                disabled={loading}
+                onClick={() => dispatch(fetchExampleTasks())}
+            >
+                {loading ? "Ładowanie..." : "Pobierz przykładowe zadania"}
             </Button>
         </ContainerButtons>
     )
