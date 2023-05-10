@@ -21,7 +21,7 @@ const TaskPage = () => {
               body={<TaskStatus/>}
             />
           </>
-          : <Header>Nie znaleziono zadania</Header>
+          : <Header>Nie znaleziono zadania 😭</Header>
         }
       </>
     </Container>
