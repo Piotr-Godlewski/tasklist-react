@@ -11,19 +11,23 @@ const TaskPage = () => {
 
   return (
     <Container>
-      <Header>Szczegóły zadania</Header>
-      <Section
-        title={task ? task.content : "Nie znaleziono zadania"}
-        body={
+      <>
+        {task ?
           <>
-            {task ?
-              <>
-                <strong>Ukończono zadanie:</strong> {task.done ? "Tak" : "Nie"}
-              </>
-              : ""}
+            <Header>Szczegóły zadania</Header>
+            <Section
+              title={task.content}
+              body={
+                <>
+                  <strong>Ukończono zadanie:</strong>
+                  {task.done ? " Tak" : " Nie"}
+                </>
+              }
+            />
           </>
+          : <Header>Nie znaleziono zadania</Header>
         }
-      />
+      </>
     </Container>
   );
 }
