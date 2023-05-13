@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/tasklist-react/static/js/main.badd2765.js",
+    "main.js": "/tasklist-react/static/js/main.5cf6c10d.js",
     "static/js/787.489a4165.chunk.js": "/tasklist-react/static/js/787.489a4165.chunk.js",
+    "static/media/photo.jpg": "/tasklist-react/static/media/photo.75a49f67177e75d4f318.jpg",
     "index.html": "/tasklist-react/index.html",
-    "main.badd2765.js.map": "/tasklist-react/static/js/main.badd2765.js.map",
+    "main.5cf6c10d.js.map": "/tasklist-react/static/js/main.5cf6c10d.js.map",
     "787.489a4165.chunk.js.map": "/tasklist-react/static/js/787.489a4165.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.badd2765.js"
+    "static/js/main.5cf6c10d.js"
   ]
 }
