@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom/cjs/react-router-dom";
 import styled, { css } from "styled-components";
 
 export const TaskList = styled.ul`
@@ -52,4 +53,14 @@ export const Button = styled.button`
             filter: brightness(125%);
         }
     `}
+`;
+
+export const StyledLink = styled(Link)`
+text-decoration: none;
+color: ${({theme}) => theme.color.teal};
+    transition: 0.5s;
+
+    &:hover {
+        filter: brightness(150%);
+    }
 `;
