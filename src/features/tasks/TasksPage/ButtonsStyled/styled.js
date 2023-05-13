@@ -17,7 +17,7 @@ export const Button = styled.button`
     padding: 10px;
 
     &:hover {
-        filter: brightness(110%);
+        filter: brightness(150%);
     }
 
     &:disabled {
