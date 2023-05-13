@@ -5,6 +5,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header/styled";
 import Container from "../../../common/Container/styled";
 import ButtonGetExampleTasks from "./ButtonGetExampleTasks";
+import Search from "./Search";
 
 const TasksPage = () => {
   return (
@@ -15,6 +16,11 @@ const TasksPage = () => {
         title="Dodaj nowe zadanie"
         body={<Form />}
         extraHeaderContent={<ButtonGetExampleTasks />}
+      />
+
+      <Section
+        title="Wyszukiwarka zadań"
+        body={<Search />}
       />
 
       <Section
