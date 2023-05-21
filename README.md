@@ -2,6 +2,17 @@
 
 ## About Aplication
 
+### Update (21.05.2023):
+
+Added:
+- localStorage (used redux-saga)
+- download example tasks (fetch, async await, raect-redux)
+- new page: about Author
+- navigation (created by react-router)
+- tasks filtering (react-router and created coustom hook (useQueryParameter, useReplaceQueryParameter))
+
+### Description of previous versions of the application
+
 This is my first aplication in React.js.
 
 In this aplication added tasks to do list.
